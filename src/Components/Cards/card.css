@@ -1,0 +1,6 @@
+.cardcontentdiv {
+  display: 'flex';
+  margin-bottom: 20;
+  align-items: center;
+  justify-content: center;
+}
