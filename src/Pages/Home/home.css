@@ -4,3 +4,11 @@
   justify-content: center;
   display: flex;
 }
+
+
+.h3
+{
+  margin-top: 50;
+   font-weight: bold;
+    color:#474747
+}

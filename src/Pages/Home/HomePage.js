@@ -15,7 +15,7 @@ const HomePage = () => {
         </div>
         {artistInfo.name ? (
           <>
-            <h3 style={{ marginTop: 50 }}>
+            <h3 className='h3'>
               1 Result found for {artistInfo.name}
             </h3>
 
@@ -27,7 +27,7 @@ const HomePage = () => {
           </>
         ) : (
 
-          <div style={{marginTop:"15px"}}>
+          <div style={{marginTop:"15px"}} className="h3">
             No Data Yet
           </div>
           

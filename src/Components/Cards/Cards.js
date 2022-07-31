@@ -4,44 +4,31 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import { Avatar } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import '../Cards/card.css'
 const Cards = (props) => {
   const navigate = useNavigate()
   return (
     <>
-      <Card sx={{ maxWidth: 350, height: 127 }}>
+      <Card className="card">
         <CardContent>
           <div
-            style={{
-              display: 'flex',
-              marginBottom: 20,
-              alignItems: 'center',
-              paddingTop: 20,
-            }}
+           className="cardcontentdiv"
           >
             <div>
               {props.data.image_url ? (
                 <img
-                  style={{
-                    height: 50,
-                    width: 50,
-                    borderRadius: 30,
-                  }}
+                className='img'
                   src={props.data.image_url}
                 />
               ) : (
                 <Avatar
-                  sx={{
-                    height: 50,
-                    width: 50,
-                    fontSize: 20,
-                    background: 'grey',
-                  }}
+                 className='img'
                 ></Avatar>
               )}
             </div>
             <div style={{ marginLeft: '10px' }}>
               <a
-                style={{ marginTop: '10px', cursor: 'default' }}
+                style={{ marginTop: '10px' }} className="paragrapghs"
                 onClick={() => {
                   navigate('/events')
                 }}
@@ -50,7 +37,7 @@ const Cards = (props) => {
               </a>
               <br />
               <a
-                style={{ cursor: 'default' }}
+                className='paragrapghs'
                 onClick={() => {
                   navigate('/events')
                 }}

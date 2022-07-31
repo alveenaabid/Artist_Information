@@ -8,6 +8,7 @@ import { Grid } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { getEvent } from '../../redux/actions/Events'
+import '../Events/events.css'
 
 const EventsPage = () => {
   const dispatch = useDispatch()
@@ -30,12 +31,12 @@ const EventsPage = () => {
               navigate('/')
             }}
           />
-          <h3>Back to results {/* {userDetail.name} */}</h3>
+          <h3  className='headings'>Back to results {/* {userDetail.name} */}</h3>
         </div>
 
         <Cards data={artistInfo} />
 
-        <h3 style={{ marginTop: 50 }}>
+        <h3 style={{ marginTop: 50}} className='headings'>
           {events ? events.length : 0} upcoming events {/* {userDetail.name} */}
         </h3>
 

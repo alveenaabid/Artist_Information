@@ -1,6 +1,30 @@
 .cardcontentdiv {
-  display: 'flex';
-  margin-bottom: 20;
+  display: flex;
+  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
+
+.card
+{
+  max-width: 350px;
+   height: 127px
+}
+
+.img
+{
+  height: 50px;
+  width: 50px;
+  font-size: 20;
+  background: grey;
+  border-radius: 25px;
+}
+
+.paragrapghs
+{
+
+  cursor: default;
+  color:#474747
+}
+
